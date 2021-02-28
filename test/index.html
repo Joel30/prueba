@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+    <head>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+
+    <title>Resultados</title>
+</head>
+<body>
+    <br>
+    <div class="container">
+        <div class="section">
+            <button type="button" class="btn btn-success" id="boton"> Ver resultados </button>
+            <table class="table table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Mesa</th>
+                        <th>Cand A</th>
+                        <th>Cand B</th>
+                        <th>Vot Nul</th>
+                        <th>Vot blan</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="resultado">
+                </tbody>
+            </table>
+            <br>
+            <button type="button" class="btn btn-primary" id="1" onclick="graficar(this.id)">Histograma</button>
+            <button type="button" class="btn btn-secondary" id="Total" onclick="graficar(this.id)">Torta</button>
+
+            <br>
+
+            <div class="container">
+                <canvas id="myChart" width="400" height="400"></canvas>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src = "ajax.js"></script>
+    <script src = "ajax2.js"></script>
+    <!-- <script src="js/jquery-3.4.1.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+</body>
+</html>
